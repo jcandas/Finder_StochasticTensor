@@ -49,9 +49,9 @@ for irowGCM = 1:size(D,1)
      
       [Datas, parameters] = methods.all.readcancerData(parameters, methods);     
       %-------debug flip raw  delete middle------------
-      %Datas.rawdata.AData = fliplr(Datas.rawdata.AData);
-      %Datas.rawdata.AData(:,10000:20000-parameters.synthetic.Ars(k)-1) = [];
-      %Datas.rawdata.BData = fliplr(Datas.rawdata.BData);
+      Datas.rawdata.AData = fliplr(Datas.rawdata.AData);
+      Datas.rawdata.AData(:,10000:20000-parameters.synthetic.Ars(k)-1) = [];
+      Datas.rawdata.BData = fliplr(Datas.rawdata.BData);
       %---------------------------------
 
       %Initialize truncations if need be
