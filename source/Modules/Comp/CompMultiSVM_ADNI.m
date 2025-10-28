@@ -93,7 +93,7 @@ for irow = 1:size(D,1)
      parameters = filefunc(parameters, methods);
     
      % Define directory path
-     save_dir = fullfile('..', 'results', 'ADNI_final_test');
+     save_dir = fullfile('..', 'results', 'ADNIResults');
 
      % Create folder if it doesn't exist
      if ~exist(save_dir, 'dir')
