@@ -2,7 +2,7 @@ function [Datas, parameters] = readData(parameters, methods)
 
 
 
-T = readtable([parameters.data.path, parameters.data.name]);
+T = readtable(fullfile(parameters.data.path, parameters.data.name));
 
 
 
