@@ -17,7 +17,7 @@ Below is the step by step instruction to reproduce the results as shown in the p
 
       Find and download "Biomarkers Consortium Plasma Proteomics Project RBM Multiplex Data and Primer (Zip file)" 
       
-      From the folder, extract "adni_plasma_qc_multiplex_11Nov2010.csv" and save to /Finder_StochasticTensor/data
+      From the folder, extract "adni_plasma_qc_multiplex_11Nov2010.csv" and save to /Finder_StochasticTensor-main/data
 
 ================== Step 3. Download phenotype data ==================================
 
@@ -31,24 +31,24 @@ Below is the step by step instruction to reproduce the results as shown in the p
         data("adnimerge")
         m12 <- subset(adnimerge, VISCODE=='m12')
         bl <- subset(adnimerge, VISCODE=='bl')
-        write.csv(m12, "/Finder_StochasticTensor/data/adni_phenotype_m12.csv", quote = F, row.names = F)
-        write.csv(bl, "/Finder_StochasticTensor/data/adni_phenotype_bl.csv", quote = F, row.names = F)
+        write.csv(m12, "/Finder_StochasticTensor-main/data/adni_phenotype_m12.csv", quote = F, row.names = F)
+        write.csv(bl, "/Finder_StochasticTensor-main/data/adni_phenotype_bl.csv", quote = F, row.names = F)
   
 ================== Step 4. Generate the data =====================================
       
       Now we have original data ready for use:
-        "/Finder_StochasticTensor/data/adni_plasma_qc_multiplex_11Nov2010.csv"
-        "/Finder_StochasticTensor/data/adni_phenotype_m12.csv"
+        "/Finder_StochasticTensor-main/data/adni_plasma_qc_multiplex_11Nov2010.csv"
+        "/Finder_StochasticTensor-main/data/adni_phenotype_m12.csv"
 
-      Go to  /Finder_StochasticTensor/source and type paths
+      Go to  /Finder_StochasticTensor-main/source and type paths
       Type PrepADNI in the command windown
-      The binary datasets will be stored in /Finder_StochasticTensor/data/ADNI_data
+      The binary datasets will be stored in /Finder_StochasticTensor-main/data/ADNI_data
 
 ================== Step 5. Get the ADNI results ======================================
 
 
       Type CompMultiSVM_ADNI in the command window
-      You can check results in /Finder_StochasticTensor/results/ADNIResults including the following:
+      You can check results in /Finder_StochasticTensor-main/results/ADNIResults including the following:
 
 	    ModelComparisonResult_{pair}_{method}.mat:  Runtime, AUC, ROC, accuracy and precision
         ModelComparisonPlot_{pair}.pdf: the plots that compare model performance in the paper
@@ -57,7 +57,7 @@ Below is the step by step instruction to reproduce the results as shown in the p
 ================== Step 6. Get the GCM results ========================================
 
       Type CompMultiSVM_GCM in the command window
-      You can check results in /Finder_StochasticTensor/results/GCMResults including the following:
+      You can check results in /Finder_StochasticTensor-main/results/GCMResults including the following:
 
         ModelComparisonResult_{sin_transform_param}_{method}_{unbalance_param}.mat:  Runtime, AUC, ROC, accuracy and precision
         ModelComparisonPlot_{sin_transform_param}.pdf: the plots that compare model performance in the paper appendix
