@@ -1,7 +1,7 @@
 function [parameters] = InitializeParameters_ADNI()
 
 %% Data parameters
-parameters.data.path = '../data/ADNI_data/';
+parameters.data.path = fullfile('..','data','ADNI_data','');
 parameters.data.label = ''; 
 parameters.data.name = [parameters.data.label, '.txt'];
 parameters.data.numofgene = []; % Set to empty array [] to initialize as latent data dimension
