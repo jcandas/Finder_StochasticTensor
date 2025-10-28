@@ -113,7 +113,7 @@ for irowGCM = 1:size(D,1)
      parameters = filefunc(parameters, methods);
   
      % Define directory path
-     save_dir = fullfile('..', 'results', 'GCM');
+     save_dir = fullfile('..', 'results', 'GCMResults');
 
      % Create folder if it doesn't exist
      if ~exist(save_dir, 'dir')
