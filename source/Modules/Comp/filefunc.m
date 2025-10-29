@@ -125,7 +125,7 @@ parameters.dataname = sprintf('%s-%s-%s-%s-%s-Results.mat',...
 
 parameters.datafolder = fullfile('..', 'results', MOEfldr, parameters.data.validationType, parameters.data.label, split_tag, str, balanced);
 
-if ~isfolder(parameters.datafolder), mkdir(parameters.datafolder), end
+% if ~isfolder(parameters.datafolder), mkdir(parameters.datafolder), end
 
 for t = 'AB'
     field = ['orig' t];
