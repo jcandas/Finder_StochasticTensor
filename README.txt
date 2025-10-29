@@ -56,7 +56,8 @@ Below is the step by step instruction to reproduce the results as shown in the p
 
 ================== Step 6. Get the GCM results ========================================
 
-      Type CompMultiSVM_GCM in the command window
+      GCM data is available in the /Finder_StochasticTensor-main/data/Tan_data-2, you can directly use it
+	  Type CompMultiSVM_GCM in the command window
       You can check results in /Finder_StochasticTensor-main/results/GCMResults including the following:
 
         ModelComparisonResult_{sin_transform_param}_{method}_{unbalance_param}.mat:  Runtime, AUC, ROC, accuracy and precision
