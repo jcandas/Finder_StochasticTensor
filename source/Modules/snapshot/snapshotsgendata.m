@@ -16,12 +16,12 @@ function [Datas, parameters] = snapshotsgendata(Datas, methods, parameters)
     rng(10000, 'philox'); 
     %rng(0, 'philox');
     parameters.origB = snapshots1(BData, parameters,methods, ...
-         parameters.synthetic.NTest + parameters.synthetic.Brs(end));%parameters.synthetic.Brs(k)
+         parameters.synthetic.NTest + parameters.synthetic.Brs(k));%parameters.synthetic.Brs(k)
  
     rng(0, 'philox'); 
     %rng(10000, 'philox');
     parameters.origA = snapshots1(AData, parameters, methods, ...
-        parameters.synthetic.NTest + parameters.synthetic.Ars(end));%parameters.synthetic.Ars(k)
+        parameters.synthetic.NTest + parameters.synthetic.Ars(k));%parameters.synthetic.Ars(k)
     
     
     % save the realizations in the Datas structure
