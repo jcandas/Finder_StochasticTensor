@@ -5,7 +5,7 @@ are run from the `source/` folder in the MATLAB command window, after a one-time
 path setup.
 
 ## Requirements
-- MATLAB (R2023b or newer) with the Statistics and Machine Learning Toolbox and
+- MATLAB (R2026 or newer) with the Statistics and Machine Learning Toolbox and
   the Deep Learning Toolbox. The Parallel Computing Toolbox is optional (the code
   falls back to serial if it is absent).
 - The bundled `toolboxes/` folder (added automatically by `paths`).
